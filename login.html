@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Company Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CalTech - Login/Register</h1>
+        <nav>
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li  class="active_page"><a href="login.html">Login/Register</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main class="form_box">
+            <form>
+                <h2>Login</h2>
+                <input id="username" placeholder="username" class="input">
+                <input id="password" placeholder="password" class="input">
+                <button type="button" onclick="login()" class="button">login</button>
+            </form>
+            <form>
+                <h2>Register</h2>
+                <input id="newUser" placeholder="username" class="input">
+                <input id="newPassword" placeholder="password" class="input">
+                <button type="button" onclick="register()" class="button">register</button>
+            </form>
+            <form>
+                <h2>Update Information</h2>
+                <input id="oldUsername" placeholder="old username" class="input">
+                <input id="oldPassword" placeholder="old password" class="input">
+                <input id="updatedUsername" placeholder="new username" class="input">
+                <input id="updatedPassword" placeholder="new password" class="input">
+                <button type="button" onclick="update()" class="button">update</button>
+            </form>
+        </main>
+    <script src="loginModule.js"></script>
+    
+</body>
+</html>
